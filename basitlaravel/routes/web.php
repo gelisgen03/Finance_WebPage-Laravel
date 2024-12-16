@@ -15,4 +15,5 @@ Route::get('/',[anasayfa::class, 'index'],);
 Route::get('/hakkimizda', [anasayfa::class, 'hakkimizda']);
 Route::get('/iletisim', [anasayfa::class,'iletisim']);
 Route::get('/users', [App::class, 'getUsers']);
+Route::get('/webPageData', [Controller::class, 'index']);
 

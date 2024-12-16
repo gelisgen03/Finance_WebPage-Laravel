@@ -6,7 +6,7 @@
     <meta name="author" content="">
 
     <title>www.fintables.com</title>
-
+   
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -15,6 +15,19 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <style>
+        .content {
+            display: none; /* Tüm içerikler gizlenir */
+        }
+
+        .active-content {
+            display: block; /* Sadece aktif olan içerik gösterilir */
+        }
+    </style>
+    
+    @livewireStyles
+
 
     
 

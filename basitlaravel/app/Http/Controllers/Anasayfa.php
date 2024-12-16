@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use Faker\Provider\ar_EG\Text;
 use Illuminate\Http\Request;
 
-class anasayfa extends Controller {
+class Anasayfa extends Controller {
     public function index(){
+
+        
         return view('\front\homepage');
     }
     public function hakkimizda(){
