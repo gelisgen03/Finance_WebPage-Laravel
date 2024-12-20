@@ -40,25 +40,25 @@
                 <h4>Fon Bilgileri</h1>
                 <!-- Divider -->
                 <hr style="border-top: 2px solid #bbb;">
-                    <span>Buraya bir metin gelecek.....</span> 
+                    <span >{{ $fonbilgisidata->gelnelAciklama}}</span> 
             </div>
             <div style="margin-top:15%">
-                <span >Fon Kodu<span style="float:right ">degisken</span></span>
+                <span >Fon Kodu<span style="float:right ">{{ $fonbilgisidata->fonKodu}}</span></span>
                 <!-- Divider -->
                 <hr style="border-top: 1px dotted#bbb;">
-                <span >Kurucu<span style="float:right ">degisken degisebilir</span></span>
+                <span >Kurucu<span style="float:right ">{{ $fonbilgisidata->fonKurucu}}</span></span>
                 <!-- Divider -->
                 <hr style="border-top: 1px dotted  #bbb;">
-                <span >Yıllık Yönetim Ücreti<span style="float:right">degisken </span></span>
+                <span >Yıllık Yönetim Ücreti<span style="float:right">{{ $fonbilgisidata->yillikYonetimUcreti}} </span></span>
                 <!-- Divider -->
                 <hr style="border-top: 1px dotted #bbb;">
-                <span >Risk Değeri<span style="float:right">degisken degissede np</span></span>
+                <span >Risk Değeri<span style="float:right">{{ $fonbilgisidata->riskDegeri}}</span></span>
                 <!-- Divider -->
                 <hr style="border-top: 1px dotted #bbb;">
-                <span >Alış Valörü<span style="float:right">degisken</span></span>
+                <span >Alış Valörü<span style="float:right">{{ $fonbilgisidata->alisValoru}}</span></span>
                 <!-- Divider -->
                 <hr style="border-top: 1px dotted #bbb;">
-                <span >Satış Valörü<span style="float:right">degisken</span></span>
+                <span >Satış Valörü<span style="float:right">{{ $fonbilgisidata->satisValoru}}</span></span>
                 <!-- Divider -->
                 <hr style="border-top: 1px dotted #bbb;">
                 <div style="float:initial" class="alert alert-info" role="alert">

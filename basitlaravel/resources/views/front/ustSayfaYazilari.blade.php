@@ -7,7 +7,7 @@
             <div style="float:inline-start ">
                 <a class="nav-link" href="index.html">
                     <i style="color:gray" class="fas fa-fw fa-Home"></i>
-                    <span style="color:gray">Fonlar</span></a>
+                    <span style="color:gray">{{ $ustsayfadata->bulunulanSayfaAdi}}</span></a>
                     <!-- Divider -->
             <hr style="border-top: 2px solid #bbb;">
         
@@ -26,21 +26,21 @@
                             </td>
                             <!-- Resmin Yanındaki yazının sütünu -->
                             <td style="width: 65%">  
-                                    <span style="font-weight: bold;font-size:200%">IPB</span>
+                                    <span style="font-weight: bold;font-size:200%">{{ $ustsayfadata->fonAdi}}</span>
                                     <br>
-                                    <span>Birinci Değişken Fonu</span>
+                                    <span>{{ $ustsayfadata->fonAdiAltAciklama}}</span>
                             </td>
                             <!--Tarih Sütünu -->
                             <td style="width: 10%" >
-                                <span  style="font-size:100%; font-family:Arial, Helvetica, sans-serif  ">6 Aralık 2024</span>
+                                <span  style="font-size:100%; font-family:Arial, Helvetica, sans-serif  ">{{ $ustsayfadata->guncelTarih}}</span>
                                 <br>
-                                <span style="color:white;font-size:150%">0,6488 </span>
+                                <span style="color:white;font-size:150%">{{ $ustsayfadata->guncelTarihData}} </span>
                             </td>
                             <!--1 Aylık Getiti Sütünu -->
                             <td style="text-align: center;width: 10%">
                                 <span style="font-size:100%">1 Aylık Getiri</span>
                                 <br>
-                                <span style="font-size:110%">%18,59</span>
+                                <span style="font-size:110%">{{ $ustsayfadata->birAylikGetitiData}}</span>
                                 
                             </td>
                             <!--3 Aylık getiti sütünu -->
@@ -48,7 +48,7 @@
                                 
                                 <span style="font-size:100%">3 Aylık Getiri</span>
                                 <br>
-                                <span style="font-size:110%">%3,88</span>
+                                <span style="font-size:110%">{{ $ustsayfadata->ucAylikGetitiData}}</span>
                             </td>
                         </tr>
                         

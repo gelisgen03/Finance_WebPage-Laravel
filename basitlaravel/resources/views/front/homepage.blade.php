@@ -39,7 +39,8 @@
          
     </div>  
     <div>
-        <p><?=$data1?></p>
+       
+        <p>{{ $homedata->fonKurucu}}</p>
     </div>   
 
     <script>
