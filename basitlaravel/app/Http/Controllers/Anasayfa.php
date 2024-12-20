@@ -13,7 +13,7 @@ class Anasayfa extends Controller {
     }
     public function hakkimizda(){
     return "hakkimizda";
-}
+    }
     public function app(){
         return "route çalişti";
     }

@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Faker\Factory as Faker;
+use phpDocumentor\Reflection\Types\Void_;
 
 return new class extends Migration
 {
@@ -25,6 +26,9 @@ return new class extends Migration
             $table->timestamps();
         });
        
+    }
+    public function down(): Void{
+        Schema::drop('fake_info');
     }
 
    

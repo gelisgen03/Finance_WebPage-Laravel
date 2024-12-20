@@ -35,12 +35,18 @@
         </div>
          <!--Righ Wrapper-->
          @include('front.rightWrapper') 
-    </div>     
+
+         
+    </div>  
+    <div>
+        <p><?=$data1?></p>
+    </div>   
 
     <script>
         // Dinamik İçerik Değiştirme Fonksiyonu
         function changeContent(page) {
             const content = document.getElementById('dynamic-content');
+                
             
             const pages = {
                 'ozet': document.getElementById('ozet-content').innerHTML,
@@ -52,6 +58,8 @@
             content.innerHTML = pages[page] || 'Sayfa bulunamadı';
         }
     </script>
+
+    
     
    
     

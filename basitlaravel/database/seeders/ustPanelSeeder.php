@@ -18,12 +18,10 @@ class ustPanelSeeder extends Seeder
             'fonAdi'=> "IPB",
             'fonAdiAltAciklama'=>"This is notA good idea",
             'guncelTarih'=>"03/03/2003",
-            'guncelTarihData'=>"Unknown",
+            'guncelTarihData'=>now(),
             'birAylikGetitiData'=>"0.5555",
             'ucAylikGetitiData'=>"0.9999",
-            
-            
-    
-            ]);
+
+        ]);
     }
 }
