@@ -28,11 +28,14 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 // Area Chart Example
+var ay=console.log(window.foo);
 var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
+  
   type: 'line',
   data: {
-    labels: ["Aralık-15", "Aralık-16", "Aralık-17", "Aralık-18", "Aralık-19", "Aralık-20", "Aralık-21"],
+    
+    labels: [ay, "Aralık-16", "Aralık-17", "Aralık-18", "Aralık-19", "Aralık-20", "Aralık-21"],
     datasets: [{
       label: "Earnings",
       lineTension: 0.3,
@@ -46,7 +49,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [0.64197, 0.64971, 0.63888, 0.63217, 0.63103,0.63300,0.63500],
+      data: [, 0.64971, 0.63888, 0.63217, 0.63103,0.63300,0.63500],
     }],
   },
   options: {
