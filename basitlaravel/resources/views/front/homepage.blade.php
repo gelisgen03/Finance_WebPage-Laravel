@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <body id="page-top">
+    
 
     <!-- Sol Wrapper -->
     <div>
@@ -33,11 +34,14 @@
                 <script src="js/demo/chart-area-demo.js"></script>
             </div>
         </div>
+
+        
          <!--Righ Wrapper-->
          @include('front.rightWrapper') 
 
          
     </div>  
+    
     <div>
        
         <p>{{ $homedata->fonKurucu}}</p>
@@ -62,9 +66,11 @@
 
 
 
-<script>
-window.foo = "{{ $yedigun->gun1}}";
-</script>
+
+<?php   
+echo "<script>var jsFonveriler = " . json_encode($fonveriler) . ";</script>";
+?>
+
     
    
     
@@ -125,6 +131,9 @@ window.foo = "{{ $yedigun->gun1}}";
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 </body>
 

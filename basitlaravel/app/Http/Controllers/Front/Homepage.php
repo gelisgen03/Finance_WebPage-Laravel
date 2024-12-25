@@ -22,10 +22,11 @@ public function index(){
     $homedata=DB::table('fon')->first();
     $ustsayfadata=DB::table('ustpaneldata')->first();
     $fonbilgisidata=DB::table('fon')->first();
-    $yedigun=DB::table('yedigun')->first();
+    $fonveriler=DB::table('fonveriler')->get();
+    
 
     $data2=DB::table('fon')->where("id",'=',0);
-    return view('front.homepage',compact('homedata','ustsayfadata','fonbilgisidata','yedigun'));  
+    return view('front.homepage',compact('homedata','ustsayfadata','fonbilgisidata','fonveriler'));  
 }
 
 

@@ -27,15 +27,17 @@ function number_format(number, decimals, dec_point, thousands_sep) {
   return s.join(dec);
 }
 
+//var veriDizisi=JSON.parse(jsFonveriler);
 // Area Chart Example
-var ay=console.log(window.foo);
+
+
 var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
-  
+
   type: 'line',
   data: {
     
-    labels: [ay, "Aralık-16", "Aralık-17", "Aralık-18", "Aralık-19", "Aralık-20", "Aralık-21"],
+    labels: [jsFonveriler[0].tarih , jsFonveriler[1].tarih, jsFonveriler[2].tarih, jsFonveriler[3].tarih, jsFonveriler[4].tarih, jsFonveriler[5].tarih],
     datasets: [{
       label: "Earnings",
       lineTension: 0.3,
@@ -49,7 +51,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(78, 115, 223, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [, 0.64971, 0.63888, 0.63217, 0.63103,0.63300,0.63500],
+      data: [jsFonveriler[0].deger , jsFonveriler[1].deger, jsFonveriler[2].deger, jsFonveriler[3].deger, jsFonveriler[4].deger, jsFonveriler[5].deger],
     }],
   },
   options: {

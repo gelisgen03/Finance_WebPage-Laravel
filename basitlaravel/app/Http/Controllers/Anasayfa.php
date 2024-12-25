@@ -12,7 +12,7 @@ class Anasayfa extends Controller {
         return view('\front\homepage');
     }
     public function hakkimizda(){
-    return "hakkimizda";
+    return view('hakkimizda');
     }
     public function app(){
         return "route çalişti";

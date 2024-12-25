@@ -30,9 +30,9 @@
                         </div>
                 
                 </div>
-                </div>
-                
             </div>
+                
+        </div>
 
             <!-- FON BİLGİLENDİRME -->  
         <div class="card shadow mb-4" style="background-color: #000000;width:25%; padding:1%" >
@@ -76,6 +76,8 @@
         
 
         <script>
+            
+            
             // Dinamik İçerik Değiştirme Fonksiyonu - 2
             function changeContent1(page) {
                 const content = document.getElementById('dynamic-content-1');
@@ -123,7 +125,7 @@
                         <p class="mb-0">Before working with this theme, you should become familiar with the
                             Bootstrap framework, especially the utility classes.</p>
                     </div>
-                </div>
+            </div>
 
                        
                 </div>
