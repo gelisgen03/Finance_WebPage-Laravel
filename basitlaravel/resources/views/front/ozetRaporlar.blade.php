@@ -42,12 +42,24 @@
 
             <div style="border:border: 5px solid black">
                 <div class="alert alert-warning" role="alert">
-                        <i class="fas fa-fw fa-clock"></i>
-                        <span></span>
+                    <table>
+                        <tr>
+                            <td style="width: 85%">
+                                <i style="margin-right: 1%" class="fas fa-fw fa-clock"></i>
+                                <span id="saat"></span>
+                            </td>
+                            <td>
+                                <button id="clic_refresh" type="button" class="btn btn-info"><i class="fa fa-retweet"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+
+                        
                         <!-- Divider -->
                 <hr style="border-top: 1px dotted#bbb;">
-                        <i class="fas fa-fw fa-table"></i>
-                        <span></span>
+                
+                        <i style="margin-right: 1%" class="fas fa-fw fa-table"></i>
+                        <span id="tarih"></span>
                 </div>
             </div>
             <div style="border:border: 5px solid black">
@@ -88,8 +100,37 @@
 
         </div>
         
+      
+          
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+        //jquery
 
         <script>
+
+    $(function() {
+        $('#clic_refresh').click(function() {
+            //alert("Butona basıldı!");
+            $.ajax({
+                type: 'GET',
+                url: '{{ route('ajax.getdata') }}',
+                success: function(response) {
+                    console.log(response); // Gelen veriyi konsola yazdır
+                      // Gelen veriyi bir değişkene ata
+                      let guncelTarih = response.guncelTarih;
+                    let guncelSaat = response.guncelSaat;
+
+                    // HTML içinde farklı yerlerde kullan
+                    $('#tarih').text(guncelTarih);
+                    $('#saat').text(guncelSaat);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Hata:', error); // Hata durumunda konsola yazdır
+                }
+            });
+        });
+    });
+
             
             
             // Dinamik İçerik Değiştirme Fonksiyonu - 2
