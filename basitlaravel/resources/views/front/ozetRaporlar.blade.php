@@ -1,3 +1,7 @@
+
+<body>
+    
+</body>
 <!-- özel Raporlar -->
 <div  id="ozel-raporlar" class="container-fluid content" style="display:grid">    
     <!-- Content Row -->
@@ -28,7 +32,6 @@
                                 <canvas id="myAreaChart"></canvas>
                             </div>
                         </div>
-                
                 </div>
             </div>
                 
@@ -36,6 +39,17 @@
 
             <!-- FON BİLGİLENDİRME -->  
         <div class="card shadow mb-4" style="background-color: #000000;width:25%; padding:1%" >
+
+            <div style="border:border: 5px solid black">
+                <div class="alert alert-warning" role="alert">
+                        <i class="fas fa-fw fa-clock"></i>
+                        <span></span>
+                        <!-- Divider -->
+                <hr style="border-top: 1px dotted#bbb;">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span></span>
+                </div>
+            </div>
             <div style="border:border: 5px solid black">
                 <h4>Fon Bilgileri</h1>
                 <!-- Divider -->
@@ -95,8 +109,36 @@
         </script>
         
              <div id="7g-content" style="display: none;">
-                @include('front.layouts.Grafikler.7g')
-                    <!--Js Dosyasi-->
+                 <!-- Area Chart -->
+ <div  >
+    <div  class="card shadow mb-4" >
+        <!-- Card Header - Dropdown -->
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" >
+            <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+            <div class="dropdown no-arrow">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                    aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Dropdown Header:</div>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card Body -->
+        <div class="card-body">
+            <div class="chart-area">
+                <canvas id="myAreaChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
             </div>
             <div id="1a-content" style="display: none;">
                 @include('front.layouts.Grafikler.1a')
@@ -114,7 +156,7 @@
             
             <div class="row">
                  <!-- Approach -->
-                 <div class="card shadow mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
                     </div>
@@ -125,12 +167,15 @@
                         <p class="mb-0">Before working with this theme, you should become familiar with the
                             Bootstrap framework, especially the utility classes.</p>
                     </div>
-            </div>
-
-                       
-                </div>
                 </div>
             </div>
+            
+        </div>
 
-        <script src="js/demo/chart-area-demo.js"></script>
+        
+        
+
+
+
+
     </div>

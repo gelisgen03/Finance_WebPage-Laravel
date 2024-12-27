@@ -22,7 +22,7 @@ public function index(){
     $homedata=DB::table('fon')->first();
     $ustsayfadata=DB::table('ustpaneldata')->first();
     $fonbilgisidata=DB::table('fon')->first();
-    $fonveriler=DB::table('fonveriler')->get();
+    $fonveriler=DB::table('fonveriler')->limit('7')->get();
     
 
     $data2=DB::table('fon')->where("id",'=',0);
